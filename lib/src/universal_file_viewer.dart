@@ -3,7 +3,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:pdfrx/pdfrx.dart';
+// import 'package:pdfrx/pdfrx.dart';
 import 'package:universal_file_viewer/src/excel_csv_file_preview.dart';
 import 'package:universal_file_viewer/src/txt_file_preview.dart';
 import 'package:universal_file_viewer/src/word_file_preview.dart';
@@ -43,9 +43,9 @@ class UniversalFileViewer extends StatelessWidget {
               padding: padding,
               color: backgroundColor,
               child: VideoPlayerWidget(file: file));
-        case FileType.pdf:
-          return PdfViewer.file(file.path,
-              params: const PdfViewerParams(margin: 32));
+        // case FileType.pdf:
+        //   return PdfViewer.file(file.path,
+        //       params: const PdfViewerParams(margin: 32));
         case FileType.word:
           return DocxToFlutter(file: file, padding: padding);
         case FileType.excel:
