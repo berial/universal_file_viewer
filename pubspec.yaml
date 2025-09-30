@@ -19,7 +19,7 @@ dependencies:
 
   open_file: ^3.5.10
   video_player: ^2.9.5
-  pdfrx: ^1.1.29
+  # pdfrx: ^1.1.29
   excel: ^4.0.6
   path: ^1.9.1
   path_provider: ^2.1.5
